@@ -4,13 +4,13 @@ $( document ).ready(function() {
 	//Declaramos las variables que se usarán como valores iniciales de las coordenadas
 	var posX_ini;
 	var posY_ini;
-	//Asignamos los eventos al elemento imágen
+	//Asignamos los eventos al elemento imagen
 	$( "#imagen" ).on({
 		//El evento mouseover para cambiar el tipo de cursor mediante una propiedad css
 		"mouseover": function() { $(this).css("cursor","crosshair"); },
-		//Usamos el evento mouseenter para almacenar la posición en los ejes X e Y en el momento en el que entra el ratón sobre la imágen
+		//Usamos el evento mouseenter para almacenar la posición en los ejes X e Y en el momento en el que entra el ratón sobre la imagen
 		"mouseenter": function(event) { posX_ini = event.pageX; posY_ini = event.pageY; },
-		//El evento mousemove para cambiar la opacidad y la altura de la imágen
+		//El evento mousemove para cambiar la opacidad y la altura de la imagen
 		"mousemove": function(event) { 
 			//Obtenemos las posiciones de las coordenadas X e Y actuales
 			var posX_fin = event.pageX;
